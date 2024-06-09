@@ -1,0 +1,78 @@
+/**
+ * @see https://css-tricks.com/perfect-full-page-background-image/
+ * @see https://css-tricks.com/almanac/properties/b/background-blend-mode/
+ */
+.cover,
+.cover-error {
+  background-image: url(../public/images/body-bg.jpeg);
+  background-repeat: repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+.cover-error {
+  background-image: url('/images/error.jpg');
+  background-color: #aaa;
+}
+
+.login-cover {
+  background: no-repeat center center / cover fixed;
+  background-image: url('/images/cover.jpg');
+  background-color: #777;
+  background-blend-mode: multiply;
+}
+
+.flex-item {
+  @apply mr-2 my-1;
+}
+.flex-item-lg {
+  @apply mr-2 my-2;
+}
+.max-h-50 {
+  max-height: 50vh;
+}
+.max {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.bg-stripe > :nth-of-type(odd) {
+  @apply bg-white;
+}
+.bg-stripe > :nth-of-type(even) {
+  @apply bg-slate-100;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+body {
+  background-image: url(../public/images/body-bg.jpeg);
+  background-repeat: repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.animation-1 {
+  animation: spin 120s linear infinite;
+}
+
+.animation-2 {
+  animation: spin 120s linear infinite;
+  animation-direction: reverse;
+}
+
+.card {
+  @apply bg-white rounded border border-gray-300 p-4;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

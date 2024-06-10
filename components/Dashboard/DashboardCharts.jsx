@@ -10,7 +10,7 @@ const DashboardCharts = () => {
         <div className="flex flex-col justify-between rounded-md bg-white p-4 shadow-lg">
           <div className="flex-grow">
             <div className="mb-4 text-center">
-              <h3 className="text-lg mb-10">Comenzi achitate {new Date().getFullYear()}</h3>
+              <h3 className="text-lg mb-10">Tickete rezolvate {new Date().getFullYear()}</h3>
             </div>
             <div className="mx-auto w-full max-w-sm px-6">
               <DashboardPieChart role="admin" />
@@ -18,11 +18,11 @@ const DashboardCharts = () => {
             <ul className="flex flex-col sm:flex-row gap-2 mt-5 text-sm items-center place-content-center">
               <li>
                 <span className="mr-1 text-indigo-600">&#9679;</span>
-                <span className="text-gray-700">Comenzi achitate</span>
+                <span className="text-gray-700">Tickete rezolvate</span>
               </li>
               <li>
                 <span className="mr-1 text-gray-400">&#9679;</span>
-                <span className="text-gray-700">Comenzi neachitate</span>
+                <span className="text-gray-700">Tickete nerezolvate</span>
               </li>
             </ul>
           </div>

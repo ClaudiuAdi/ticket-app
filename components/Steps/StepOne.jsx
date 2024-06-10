@@ -131,7 +131,7 @@ const StepOne = ({ children }) => {
         >
           <div className="flex flex-col gap-12 backdrop-filter rounded-xl sm:p-8 px-4 py-8 bg-primary/5 relative">
             <h2 className="text-center text-4xl font-semibold">
-              Obțineți prima consultație online gratuită
+              Scrie-ne si primeste consultatia mult dorita
             </h2>
             {children}
           </div>

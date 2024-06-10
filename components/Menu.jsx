@@ -32,7 +32,6 @@ const Menu = () => {
                 classNames={'md:hidden'}
                 href={'/admin'}
               />
-              <i className="text-2xl text-indigo-200 fa-brands fa-servicestack hidden md:inline"></i>
             </div>
             <Pages />
           </div>

@@ -44,17 +44,18 @@ const TicketCardSuccess = ({
             <p className="font-medium text-2xl">{problem}</p>
           </div>
           <div>
-            <p className="font-medium mb-2 text-lg">
-              De ce crezi că ai/te confrunți cu această problemă/situație
-            </p>
+            <p className="font-medium mb-2 text-lg">De cât timp întâmpinați această problemă?</p>
             <p className="break-keep">{time || 'Fără răspuns'}</p>
           </div>
           <div>
-            <p className="font-medium mb-2 text-lg">Cum ar fi viața ta în lipsa acestei probleme</p>
+            <p className="font-medium mb-2 text-lg">
+              Ați căutat anterior ajutor pentru această problemă? Dacă da, ce tip de ajutor ați
+              primit?
+            </p>
             <p className="break-keep">{previousHelp || 'Fără răspuns'}</p>
           </div>
           <div>
-            <p className="font-medium mb-2 text-lg">Mesaj</p>
+            <p className="font-medium mb-2 text-lg">Mai multe detalii</p>
             <p className="break-keep">{message}</p>
           </div>
           <p className="font-medium text-lg">Răspunsul tău</p>
@@ -76,7 +77,7 @@ const TicketCardSuccess = ({
         </div>
         <div className="flex flex-col gap-5 border-b border-gray-200 p-4">
           <div className="xl:flex-row flex-col flex xl:items-center xl:gap-5 gap-1 -mb-2">
-            <span className="font-medium xl:whitespace-nowrap">Persoană desemnată: </span>
+            <span className="font-medium xl:whitespace-nowrap">Persoană desemnată</span>
           </div>
           <div className="flex items-center gap-2">
             <i className="fa-solid fa-circle-user text-secondary w-4"></i>

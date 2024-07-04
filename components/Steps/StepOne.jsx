@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { Button, Features, Testiomonials } from '@components';
+import { Button, Testiomonials } from '@components';
 
 const StepOne = ({ children }) => {
   const sectionOne = useRef(null);
@@ -7,7 +7,7 @@ const StepOne = ({ children }) => {
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
-      top: elementRef.current.offsetTop,
+      top: elementRef.current.offsetTop - 35,
       behavior: 'smooth',
     });
   };
@@ -34,9 +34,9 @@ const StepOne = ({ children }) => {
 
             <Button
               onClick={() => scrollToSection(sectionTwo)}
-              className="button full primary lg:w-fit px-6 sm:whitespace-nowrap whitespace-none font-universe"
+              className="button full primary lg:w-fit px-6 sm:whitespace-nowrap whitespace-none font-universe bg-primary hover:bg-white hover:text-primary"
             >
-              Incepe-ți călătoria
+              Primeste consultatia
             </Button>
           </div>
           <div className="relative self-center -mt-96 sm:block hidden">
@@ -72,7 +72,7 @@ const StepOne = ({ children }) => {
         </section>
         <section
           ref={sectionOne}
-          className=" pb-24 lg:py-0 flex flex-col items-center gap-16 sm:gap-8"
+          className=" sm:pb-24 lg:py-0 flex flex-col items-center gap-4 sm:gap-8"
         >
           <div className="text-5xl font-bold">Ceea ce oferim</div>
           <div className="text-lg">Sfaturi psihologice experte la îndemână</div>
@@ -125,18 +125,14 @@ const StepOne = ({ children }) => {
             </div>
           </div>
         </section>
-        <section
-          ref={sectionTwo}
-          className="lg:h-screen flex items-center justify-center bg-white w-full"
-        >
-          <div className="flex flex-col gap-12 backdrop-filter rounded-xl sm:p-8 px-4 py-8 bg-primary/5 relative">
+        <section ref={sectionTwo} className=" flex items-center justify-center bg-white w-full">
+          <div className="flex flex-col gap-12 backdrop-filter sm:p-8 px-4 py-8 bg-primary/5 relative my-20 sm:w-2/3 w-full rounded-br-[100px] rounded-tl-[100px]">
             <h2 className="text-center text-4xl font-semibold">
               Scrie-ne si primeste consultatia mult dorita
             </h2>
             {children}
           </div>
         </section>
-        <Features />
         <Testiomonials />
       </div>
     </section>

@@ -1,6 +1,6 @@
 module.exports = {
-  sitename: 'Server of the universe',
-  title: 'Server of the universe',
+  sitename: 'PsyChat',
+  title: 'PsyChat',
   description: `Universe's Guidance. Primiți răspunsuri și soluții la provocările vieții.
   Soluția potrivită va veni către tine printr-o Mantra, pe care, pe măsură ce o vei rosti,
   dorința ta se va materializa ca prin magie.`,

@@ -1,5 +1,5 @@
+import { Button } from '@components';
 import { useFormikContext } from 'formik';
-import { Button } from '..';
 
 const Submit = ({ children, isLoading, ...props }) => {
   const { isValid, validateOnMount } = useFormikContext();
@@ -8,9 +8,12 @@ const Submit = ({ children, isLoading, ...props }) => {
   return (
     <div className="flex items-center">
       <Button type="submit" className="button full primary" disabled={disabled} {...props}>
-        {children}
+        {isLoading ? (
+          <img src="/icons/loading.gif" alt="loading" className="w-10 mx-auto" />
+        ) : (
+          children
+        )}
       </Button>
-      {isLoading && <img src="/icons/loading.gif" alt="loading" className="mx-1 w-6" />}
     </div>
   );
 };
